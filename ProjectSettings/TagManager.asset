@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - SlashHitbox_Vert
+  - SlashHitbox_Horiz
+  - BasicAttack
+  - TennisBall
+  - Attackable
+  - BlueSong
+  - GreenSong
+  - RedSong
+  - Water
+  - soldier
+  - Message
+  - Panel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - DynamicLighting
+  - Offscreen
+  - Nothing
+  - DragonHead
+  - DragonBody
+  - InteractibleObject
+  - PlayerObject
+  - PlayerObjectReactor
+  - PlayerAbility
+  - PlayerAbilityReactor
+  - PlayerGround
+  - GlobalInteractableObject
+  - Ignore
+  - Loading
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Loading
+    uniqueID: 1418866797
+    locked: 0
