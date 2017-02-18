@@ -12,14 +12,15 @@ public class MessageReceive : MonoBehaviour {
 	void Start () {
 
 		User data = UserModel.Instance.data;
-		WebLoaderTask<ResceiveInfo> web = WebAction.Instance.receiveMessage (data.id, data.password);
-		web.onSucceed += delegate(ResceiveInfo info) {
-			for(int i = 0; i<info.receive.Count; ++i){
-				messages_.Push( info.receive[i].getText());
-			}
-//			Debug.LogError(JsonUtility.ToJson(info));
-		};
-		TaskManager.Run (web);
+		if (data != null) {
+			WebLoaderTask<ResceiveInfo> web = WebAction.Instance.receiveMessage (data.id, data.password);
+			web.onSucceed += delegate(ResceiveInfo info) {
+				for (int i = 0; i < info.receive.Count; ++i) {
+					messages_.Push (info.receive [i].getText ());
+				}
+			};
+			TaskManager.Run (web);
+		}
 	}
 	public void next(){
 		_text.text = "";
