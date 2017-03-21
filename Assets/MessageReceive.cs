@@ -13,6 +13,10 @@ public class MessageReceive : MonoBehaviour {
 
 		User data = UserModel.Instance.data;
 		if (data != null) {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 			WebLoaderTask<ResceiveInfo> web = WebAction.Instance.receiveMessage (data.id, data.password);
 			web.onSucceed += delegate(ResceiveInfo info) {
 				for (int i = 0; i < info.receive.Count; ++i) {

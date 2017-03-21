@@ -44,11 +44,8 @@ public class UserModel : GDGeek.Singleton<UserModel> {
 			PlayerPrefs.SetString (key, json);
 			PlayerPrefs.Save ();
 		}
-		get{ 
-
+		get{
 			string json = PlayerPrefs.GetString (key);
-
-
 			return JsonUtility.FromJson<User>(json);
 		}
 
